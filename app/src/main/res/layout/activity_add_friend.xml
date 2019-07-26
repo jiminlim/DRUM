@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    tools:context=".AddFriend"
+    android:orientation="vertical"
+    android:id="@+id/popup">
+
+    <TextView
+        android:id="@+id/friend_id"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="친구아이디를 입력하세요"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초대"
+        android:layout_gravity="center"
+        android:onClick="mOnClose"/>
+</LinearLayout>
