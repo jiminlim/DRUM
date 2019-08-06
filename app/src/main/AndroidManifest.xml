@@ -9,18 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".Login" android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateRoom" />
-        <activity android:name=".ReadyRoom" />
-        <activity android:name=".Room" />
-        <activity android:name=".Play" />
-        <activity android:name=".AddFriend" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".CreateRoom" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ReadyRoom" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Room" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Play" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".AddFriend"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Main" android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>
