@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 str=et_id.getText().toString();
-                Intent intent = new Intent(Login.this, ReadyRoom.class);
+                Intent intent = new Intent(Login.this, Main.class);
                 intent.putExtra("str",str);
                 startActivity(intent);
             }

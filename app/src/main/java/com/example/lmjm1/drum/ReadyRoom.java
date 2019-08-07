@@ -35,7 +35,7 @@ public class ReadyRoom extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_back = new Intent(ReadyRoom.this, Login.class);
+                Intent intent_back = new Intent(ReadyRoom.this, Main.class);
                 startActivity(intent_back);
             }
         });
