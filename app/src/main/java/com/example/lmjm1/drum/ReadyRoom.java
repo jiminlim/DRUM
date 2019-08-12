@@ -1,6 +1,7 @@
 package com.example.lmjm1.drum;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ public class ReadyRoom extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_ready_room);
 
         tv_name=findViewById(R.id.tv_name);
@@ -33,7 +35,7 @@ public class ReadyRoom extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_back = new Intent(ReadyRoom.this, MainActivity.class);
+                Intent intent_back = new Intent(ReadyRoom.this, Main.class);
                 startActivity(intent_back);
             }
         });

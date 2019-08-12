@@ -1,6 +1,7 @@
 package com.example.lmjm1.drum;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ public class Room extends AppCompatActivity {
 
     private Button btn_back;
     private Button friend1;
-
+    private Button start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,17 @@ public class Room extends AppCompatActivity {
         friend1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Room.this, Play.class);
+                startActivity(intent);
+            }
+        });
 
+        start=findViewById(R.id.start);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Room.this, Play.class);
+                startActivity(intent);
             }
         });
     }
